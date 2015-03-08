@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-check http://mose.com
+check <http://mose.com>
