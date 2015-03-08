@@ -6,7 +6,7 @@ tags: jekyll while42
 ---
 2 months ago we opened a [while42][w42] chapter in Taipei. We had a [first meeting][meeting] in Taipei Harckerspace, sponsored by [Gandi][gandi].
 
-When Sylvain, on the organizers mailing-list, launched a call to help renew the website, I proposed to switch it from php/mysql pages to a much simpler [github pages][gh-pages] setup, based on [jekyll][jekyll]. Everybody was happy with the idea so I went for it.
+When Sylvain, on the organizers mailing-list, launched a call to help renew the [website while42.org][w42], I proposed to switch it from php/mysql pages to a much simpler [github pages][gh-pages] setup, based on [jekyll][jekyll]. Everybody was happy with the idea so I went for it.
 
 Easy setup
 ==============
