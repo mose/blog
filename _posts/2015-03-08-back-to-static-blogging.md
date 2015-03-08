@@ -2,7 +2,7 @@
 layout: post
 title:  "Back to static blogging"
 date:   2015-03-07 17:34:59 +0800
-categories: meta
+tags: meta
 ---
 There is no secret, I'm not a huge blogger. I had a [blog on tumblr][tumblr-mose] because I wanted to see how they made it, but this was not really fed with so much attention.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Moving While42 to Jekyll"
 date:   2015-03-08 18:34:59 +0800
-categories: jekyll while42
+tags: jekyll while42
 ---
 2 months ago we opened a [while42][w42] chapter in Taipei. We had a [first meeting][meeting] in Taipei Harckerspace, sponsored by [Gandi][gandi].
 
@@ -18,16 +18,16 @@ The idea is to have some code generating static web pages out of templates and d
 Pages generation
 ==================
 
-Jekyll is writen in ruby, but for publishing pages on github, you don't really need to have ruby installed. The processing is triggered for each `git push`. But it still can be convenient to have ruby installed for rendering pages locally before pushing. If there is a syntax error in a template, github will send you a mail with details and will refuse to generate a new version. So it's quite robust and fail safe.
+Jekyll is written in ruby, but for publishing pages on github, you don't really need to have ruby installed. The processing is triggered for each `git push`. But it still can be convenient to have ruby installed for rendering pages locally before pushing. If there is a syntax error in a template, github will send you a mail with details and will refuse to generate a new version. So it's quite robust and fail safe.
 
 The side effect of having pages pre-generated is that they are of course much faster to serve, but also there is no question about the security, the portability and things are all along much simpler to manage from an operational point of view.
 
-Note that for local generation I also created a simple [Dockerfile][dockerfile], so that people that don't want to install ruby can still pregenerate the pages locally before push.
+Note that for local generation I also created a simple [Dockerfile][dockerfile], so that people that don't want to install ruby can still pre-generate the pages locally before push.
 
 Template system
 =================
 
-The template system used in Jekyll is named [Liquid][liquid], it was developped by spotify for their own system and published as open source. 
+The template system used in Jekyll is named [Liquid][liquid], it was developed by spotify for their own system and published as open source. 
 
 Templating is great, some common parts of pages can be extracted and replaced by includes, like in the case of our While42 photos at the bottom:
 
