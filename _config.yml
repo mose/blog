@@ -1,9 +1,9 @@
 # Site settings
-title: mose bla 
+title: Mose bla
 email: mose@mose.com
 description: Random rant from mose.
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://mose.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://bla.mose.com/" # the base hostname & protocol for your site
 twitter_username: mo5e
 github_username:  mose
 

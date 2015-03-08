@@ -128,20 +128,22 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #fff;
 }
 
 code {
     padding: 1px 5px;
+    background-color: #ddd;
 }
 
 pre {
     padding: 8px 12px;
     overflow-x: scroll;
+    border: 1px solid $grey-color-light;
 
     > code {
+        background-color: transparent;
         border: 0;
         padding-right: 0;
         padding-left: 0;
@@ -198,7 +200,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: #fff;
         }
     }
 }
