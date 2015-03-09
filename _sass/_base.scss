@@ -127,7 +127,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 3px;
     background-color: #fff;
 }
@@ -135,6 +135,7 @@ code {
 code {
     padding: 1px 5px;
     background-color: #ddd;
+    color: #333;
 }
 
 pre {
@@ -143,6 +144,7 @@ pre {
     border: 1px solid $grey-color-light;
 
     > code {
+        color: #666;
         background-color: transparent;
         border: 0;
         padding-right: 0;
