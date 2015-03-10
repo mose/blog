@@ -9,14 +9,14 @@ tags: jekyll while42
 When Sylvain, on the organizers mailing-list, launched a call to help renew the [website while42.org][w42], I proposed to switch it from php/mysql pages to a much simpler [github pages][gh-pages] setup, based on [jekyll][jekyll]. Everybody was happy with the idea so I went for it.
 
 Easy setup
-==============
+-------------
 
 Jekyll was [created in 2009][jekyll-contribs] by [Tom Preston-Werner][mojombo], the founder of github, as a side project. Since then it has been integrated as a way to publish pre-generated static pages on github, mostly to present projects. But there are many people just using it as a hosting platform for their blogs. 
 
 The idea is to have some code generating static web pages out of templates and data files. With years, Jekyll added support for SASS and coffeescript preprocessing. And recently, an arbitrary data system was added. It can replace a small database by yaml files.
 
 Pages generation
-==================
+-------------------
 
 Jekyll is written in ruby, but for publishing pages on github, you don't really need to have ruby installed. The processing is triggered for each `git push`. But it still can be convenient to have ruby installed for rendering pages locally before pushing. If there is a syntax error in a template, github will send you a mail with details and will refuse to generate a new version. So it's quite robust and fail safe.
 
@@ -25,7 +25,7 @@ The side effect of having pages pre-generated is that they are of course much fa
 Note that for local generation I also created a simple [Dockerfile][dockerfile], so that people that don't want to install ruby can still pre-generate the pages locally before push.
 
 Template system
-=================
+--------------------
 
 The template system used in Jekyll is named [Liquid][liquid], it was developed by spotify for their own system and published as open source. 
 
@@ -61,7 +61,7 @@ Photos
 {% endhighlight %}
 
 Use of variables
-===================
+-----------------------
 
 In templates, we can call variables defined either by the system, either by the configuration file `_config.yml`.
 
@@ -94,7 +94,7 @@ So we can use it as `{{ site.twitter_username }}` in `_includes/footer.html`:
 {% endhighlight %}
 
 Data storage
-=================
+-----------------
 
 This is the most amazing part of recent Jekyll versions. You can store arbitrary Yaml files in `_data` and call them anywhere in the templates. So for the while42 website, for the right column where all the chapters are listed, I created a `_data/chapters/` with:
 
@@ -198,7 +198,7 @@ And it's included in a much simpler way as:
 
 
 An optimal workflow
-======================
+----------------------
 
 The side effect of treating the while42 website as a public repository is that organizers from each chapters can now just clone the repo, add their modifications on their very own data file, and issue a pull request to the main repo. The websites maintainers (Julien and Sylvain) just have to check if the yaml file is properly formatted, if photos are added correctly, and they merge de pull request, then the website is updated.
 
@@ -207,8 +207,9 @@ It didn't wait long before we get the first pull requests on <https://github.com
 - <https://github.com/while42-org/while42-org.github.io/pull/2>
 - <https://github.com/while42-org/while42-org.github.io/pull/3>
 
+
 More about static generation
-==============================
+-------------------------------
 
 For many webiste, that are not full-blown web applications, generating staticaly makes a lot of sense. Jekyll is a great tool but there are a whole lot of various frameworks in all possible languages that you can use for your own needs. Check out <http://www.staticgen.com> for a list of them.
 
