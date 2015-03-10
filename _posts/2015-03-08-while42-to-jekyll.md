@@ -33,7 +33,7 @@ Templating is great, some common parts of pages can be extracted and replaced by
 
 This is in `_includes/home/photos.md`:
 
-{% highlight markdown %}
+{% highlight text %}
 [![](http://farm4.staticflickr.com/3806/9372559708_41ca1ede4b_m.jpg)](http://www.flickr.com/photos/while42/9372559708)
 [![](http://farm4.staticflickr.com/3711/9269942997_809ff5a11a_m.jpg)](http://www.flickr.com/photos/while42/9269942997)  
 [![](http://farm4.staticflickr.com/3773/9215411783_e337f85080_m.jpg)](http://www.flickr.com/photos/while42/9215411783)

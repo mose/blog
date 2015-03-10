@@ -22,7 +22,7 @@ exclude:
 encoding:     "utf-8"
 
 markdown_ext: "md"
-#highlighter:  "rouge"
+#highlighter:  "pygments"
 
 # Build settings
 markdown: kramdown
